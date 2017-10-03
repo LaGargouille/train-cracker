@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train-Cracker</title>
+</head>
+<body>
+
+{{ form_start(form) }}
+{{ form_widget(form) }}
+{{ form_end(form) }}
+
+{% if myImage is defined %}
+<img src="{{ asset('upload/' ~ myImage) }}" width="200px" height="200px">
+{% endif %}
+</body>
+</html>
